@@ -7,8 +7,8 @@
     <property environment="env"/>
     <property name="ECLIPSE_HOME" value="../../../ECLIPSE/eclipse-workspace/.metadata/.plugins/org.eclipse.pde.core/.bundle_pool"/>
     <property name="debuglevel" value="source,lines,vars"/>
-    <property name="target" value="1.8"/>
-    <property name="source" value="1.8"/>
+    <property name="target" value="11"/>
+    <property name="source" value="11"/>
     <path id="Apache Tomcat v8.5 [Apache Tomcat v8.5].libraryclasspath">
         <pathelement location="../../../../../Program Files/Apache Software Foundation/Tomcat 8.5/lib/annotations-api.jar"/>
         <pathelement location="../../../../../Program Files/Apache Software Foundation/Tomcat 8.5/lib/catalina-ant.jar"/>

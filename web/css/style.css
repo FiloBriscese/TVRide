@@ -1,0 +1,71 @@
+/* colori usati: LightGrey, green, WhiteSmoke*/
+
+/* navbar */
+body {
+	background-color: WhiteSmoke;
+}
+
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: green;
+}
+
+li.nav {
+  float: left;
+}
+
+li a { /* testo navbar*/
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: white;
+}
+
+li a:hover:not(.nav_active, .nav_logo) {
+  background-color: LightGrey;
+  color: black;
+}
+
+li a.nav_active {
+  color: black;
+  font-weight: bold;
+  background-color: LightGrey;
+}
+
+li a.nav_logo {
+  color: green;
+  background-color: white;
+  font-weight: bolder;
+  font-size: 23px;
+  padding: 7px 16px 7px;
+  border: 3px solid DarkGreen;
+}
+
+
+/* card */
+.card {
+  /* Add shadows to create the "card" effect */
+  width: 26%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  margin-left: 16px;
+  background-color: LightGrey;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 16px 16px 16px 32px;
+}
+

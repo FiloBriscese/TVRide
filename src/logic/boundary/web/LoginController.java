@@ -26,13 +26,13 @@ public class LoginController {
         // Se sono corretti allora restituisci nome e cognome.
         if (bean.getStudentId().matches("\\d{7}")) { // TODO | DUMMY: se studID è un numero di 7 cifre
             if(bean.getStudentId().equals("1234567")) {
-            	bean.setNome("Lollo");
-            	bean.setCognome("Pieces");
+            	bean.setName("Lollo");
+            	bean.setSurname("Pieces");
             	bean.setRole("Driver");
             }
             else {
-            	bean.setNome("Fede");
-            	bean.setCognome("Cats");
+            	bean.setName("Fede");
+            	bean.setSurname("Cats");
             	bean.setRole("Passenger");
             }
         } else {

@@ -17,20 +17,28 @@ public class LoginController {
     }
 
     public LoginBean login(LoginBean bean) {	// TODO
+    	/* if login is successful sets the bean with user's info, if not returns null */
+    	
         // Esegui accesso al DB per verificare se username e password sono corretti
             // sql query
             // setuser setpw setname ...
 
         // Se sono corretti allora restituisci nome e cognome.
         if (bean.getStudentId().matches("\\d{7}")) { // TODO | DUMMY: se studID è un numero di 7 cifre
-            bean.setNome("Filo");
-            bean.setCognome("Bris");
-            bean.setRole("Driver");
+            if(bean.getStudentId().equals("1234567")) {
+            	bean.setNome("Lollo");
+            	bean.setCognome("Pieces");
+            	bean.setRole("Driver");
+            }
+            else {
+            	bean.setNome("Fede");
+            	bean.setCognome("Cats");
+            	bean.setRole("Passenger");
+            }
         } else {
             bean = null;
         }
-        // Altrimenti restituisci null
-        return bean;
 
+        return bean;
     }
 }

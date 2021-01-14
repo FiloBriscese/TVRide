@@ -32,11 +32,10 @@
 		<li class="nav" style="float:right"><a >Notifications</a></li>
 	</ul>
 	
-<!-- mantieni tutte le righe qui sopra e modifica da qui in giu -->
-	
 	<h3>Ciao <%=session.getAttribute("userName") %> <%=session.getAttribute("userCognome")%></h3>
+	<h4>You are a <strong><%=session.getAttribute("userRole") %></strong></h4>
 	<br>
 	<br>
-	<p>qui mettere tipo: la tua prossima corsa è il XX alle XX da X a X (come Passeggero/Driver)</p>
+	<p>Your next ride is on DD/MM/YYYY, at HH:MM. From A to B (as a Passenger/you are the Driver)</p>
 </body>
 </html>

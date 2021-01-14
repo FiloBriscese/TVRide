@@ -57,15 +57,17 @@ public class LoginBean {
     }
 
     public boolean validate() {
-        // controllo sintattico
+    	/* non-setter, non-getter method for JSP JavaBean usage*/
+    	
+        // syntax check
         if (studentId == null || studentId.equals("") || password == null || password.equals("")) {
             return false;
         }
 
+        // ask the controller to handle log in
         LoginBean utenteTrovato = LoginController.getInstance().login(this);
 
         return utenteTrovato != null;
-
     }
 
 }

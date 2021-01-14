@@ -35,7 +35,7 @@ if (request.getParameter("login") != null) {
 		session.setAttribute("userId", loginBean.getStudentId());
 		session.setAttribute("userName", loginBean.getNome());
 		session.setAttribute("userCognome", loginBean.getCognome());
-		session.setAttribute("userRole", loginBean.getRole());	//*/
+		session.setAttribute("userRole", loginBean.getRole());
 %>
 		<jsp:forward page="home.jsp"/>
 <%

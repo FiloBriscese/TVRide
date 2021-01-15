@@ -22,4 +22,10 @@ public class JSPFacade {
 		controller.searchRides(bean);
 		return bean;
 	}
+	
+	public boolean requestSeat(int rideId, int studentId) {
+		RequestSeatController controller = new RequestSeatController();
+		return controller.requestSeat(rideId, studentId);
+		
+	}
 }

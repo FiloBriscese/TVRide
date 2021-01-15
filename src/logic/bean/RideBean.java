@@ -1,5 +1,7 @@
 package logic.bean;
 
+import logic.boundary.web.JSPFacade;
+
 public class RideBean {
 	
 	private int rideId;
@@ -68,5 +70,13 @@ public class RideBean {
 	
 	public void setTime(String time) {
 		this.time = time;
+	}
+
+	
+	// JSP utility method
+	public boolean sendRequest(String userId) {
+		
+		return JSPFacade.getInstance().requestSeat(this.rideId, Integer.parseInt(userId));
+
 	}
 }
